@@ -12,20 +12,20 @@ styles = {'horizontal' : '_hcount',
           'large' : '_large'}
 
 
-class Social(p.SingletonPlugin):
+class Citation(p.SingletonPlugin):
 
     p.implements(p.IConfigurer)
     p.implements(p.IConfigurable)
     p.implements(p.ITemplateHelpers)
 
     def configure(self, config):
-        style = config.get('social.sharethis_style', 'horizontal')
+        style = config.get('citation.sharethis_style', 'horizontal')
         style = styles.get(style, '')
 
-        sites = config.get('social.sharethis_sites','sharethis')
+        sites = config.get('citation.sharethis_sites','sharethis')
         sites = p.toolkit.aslist(sites)
 
-        multipost = config.get('social.sharethis_multipost', 'true')
+        multipost = config.get('citation.sharethis_multipost', 'true')
         multipost = p.toolkit.asbool(multipost)
 
         # store these so available to class methods
