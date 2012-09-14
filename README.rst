@@ -1,8 +1,7 @@
-Social Extension
+Citation Extension
 ================
 
-The Social extension allows site visitors to share pages on social
-networking sites.
+The Citation extension displays a citation at the bottom of the page of a dataset.
 
 NOTE: This extension requires ckan version 1.7 or higher.
 
@@ -11,11 +10,11 @@ Activating and Installing
 
 To install the plugin, enter your virtualenv and load the source::
 
- (pyenv)$ git install -e hg+https://github.com/okfn/ckanext-social#egg=ckanext-social
+ (pyenv)$ git install -e hg+https://github.com/lncd/ckanext-citation#egg=ckanext-citation
 
 Add the following to your CKAN .ini file::
 
- ckan.plugins = social <other-plugins>
+ ckan.plugins = citation <other-plugins>
 
 Using the Extension
 -------------------
