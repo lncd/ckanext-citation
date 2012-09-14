@@ -11,17 +11,14 @@ ${h.resource_display_name(c.resource)}
 
 ---
 
-    print c
-    
-    ---
-    
-    c
-    
-    ---
-    
-    print c.resource
-    
-    ---
+${for d in c:
+    print d}
+
+---
+
+${print c}
+
+---
 
 </div>
 </html>
