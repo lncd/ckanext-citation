@@ -8,9 +8,11 @@
 
 <h3>Citation</h3>
 
-${h.resource_display_name(c)}
+${h.resource_display_name(c.resource)}
 
 Citation goes here
+
+${for d in c: print d}
 
 </div>
 </html>
