@@ -7,13 +7,15 @@
 <div>
 
 <h3>Citation</h3>
-${import time}
+
 <pre>
 @data{${c.resource.id},
 author = ${c.pkg.author},
 Title = ${c.resource.name},
 Publisher = ,
-Year = ${time.strptime(c.resource.created, "%d %b %y")},
+Year = ${c.resource.created},
+${import time}
+${time.strptime("30 Nov 00", "%d %b %y")}
 }
 </pre>
 
