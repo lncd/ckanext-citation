@@ -9,11 +9,11 @@
 <h3>Citation</h3>
 
 <pre>
-@data{${c.resource.id}
-author = ${c.pkg.author}
-Title = ${c.resource.name}
-Publisher = 
-Year = ${c.resource.created}
+@data{${c.resource.id},
+author = ${c.pkg.author},
+Title = ${c.resource.name},
+Publisher = ,
+Year = ${print(c.resource.created).strftime('%Y')},
 }
 </pre>
 
